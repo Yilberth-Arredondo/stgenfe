@@ -42,7 +42,7 @@ The project follows a SCREAM-based component architecture to organize components
 1. Clone the repository (ssh):
     ```bash
     git clone git@github.com:Yilberth-Arredondo/stgenfe.git
-    cd yourrepository
+    cd stgenfe
     ```
 
 2. Install dependencies:
@@ -82,4 +82,5 @@ The application leverages **React hooks** to manage component logic:
 - **Additional Validation**: Enhance form validations and add more secure data handling.
 - **Accessibility Improvements**: Ensure all components are fully accessible following ARIA standards.
 - **Testing**: Incorporate unit tests and integration tests to validate component functionality.
+- **Responsive**: The views are not fully developed to work on every screen size, although some adjustments have been made for certain mobile device
 
