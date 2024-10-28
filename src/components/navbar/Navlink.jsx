@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import proptypes from 'prop-types';
-const NavLink = ({ to, children }) => {
+const NavLink = ({ to, children, classes }) => {
   return (
-    <li className="h-full">
+    <li className={`h-full ${classes}`}>
       <Link
         to={to}
-        className="h-full flex content-center flex-wrap border-b-2 border-transparent hover:border-b-sky-600 hover:bg-slate-400 duration-150 px-11 hover:text-white font-semibold"
+        className="flex h-full flex-wrap content-center gap-2 border-b-2 border-transparent px-11 font-semibold duration-150 hover:border-b-sky-600 hover:bg-slate-400 hover:text-white"
       >
         {children}
       </Link>
@@ -15,5 +15,6 @@ const NavLink = ({ to, children }) => {
 NavLink.propTypes = {
   to: proptypes.string.isRequired,
   children: proptypes.node.isRequired,
+  classes: proptypes.string,
 };
 export default NavLink;
